@@ -10,11 +10,11 @@
 <body>
     <nav>
         <ul class="menu">
-            <li class="menu"><a href="#about">About</a></li>
-            <li class="menu"><a href="#skill">Skill</a></li>
-            <li class="menu"><a href="#field">Field</a></li>
-            <li class="menu"><a href="#works">Works</a></li>
-            <li class="menu"><a href="#contact">Contact</a></li>
+            <li class="menu"><a href="#about" class="navbar">About</a></li>
+            <li class="menu"><a href="#skill" class="navbar">Skill</a></li>
+            <li class="menu"><a href="#field" class="navbar">Field</a></li>
+            <li class="menu"><a href="#works" class="navbar">Works</a></li>
+            <li class="menu"><a href="#contact" class="navbar">Contact</a></li>
         </ul>
     </nav>
 
@@ -54,9 +54,47 @@
     </ul>
     
     <h3 id="works">Works</h3>
-    <ul>
-        <li class="content">次回課題</li>
-    </ul>
+    <ol>
+        <li class="content"><strong>あなたの顔は何顔!?顔タイプ判別器の作成</strong>(2021-11-30)</li>
+        <img src="images/G12_CNNApp_1.png" alt="faceType_1" class="set_auto">
+        <p>CNNを用いて4つの顔タイプに分類する学習モデルを作成</p>
+        <img src="images/G12_CNNApp_2.png" alt="faceType2" class="set_auto">
+        <ul>
+            <li>Python: システム全体の実装</li>
+            <li>OpenCV: 画像から顔部分の抽出</li>
+            <li>TensorFlow: 顔分類用の学習モデルの構築・分類</li>
+            <li>Flask: Webアプリケーションとしてシステムを実装</li>
+        </ul><br>
+
+        <li class="content"><strong><a href="https://www.jsise.org/society/presentation/2021/01_hokkaido.html">JSiSE2021年度学生研究発表会</a>で研究発表</strong>(2022-03-03)</li>
+        <p>発表タイトル: Bluetooth機器を用いた屋内環境における混雑度の推定</p>
+        <p>北海道支部特別賞を<a href="https://www.musashino-u.ac.jp/news/20220325-10.html">受賞</a></p>
+        <p>Bluetoothの電波から空間内の混雑度計量を行い、ユーザの利用意図に最も合う施設を選べるようにすることを目指した</p>
+        <table border="0">
+            <tr>
+                <td><img src="images/JSiSE_B1late_mirai_1.png" alt="JSiSE_1" width="400px"></td>
+                <td><img src="images/JSiSE_B1late_mirai_2.png" alt="JSiSE_2" width="400px"></td>
+            </tr>
+        </table>
+        <ul>
+            <li>Python: システム全体の実装</li>
+            <li>PostgreSQL: 測定したデータの格納・計算時の抽出</li>
+        </ul><br>
+
+        <li><strong>情報処理学会 第84回全国大会</strong></li>
+        <p>発表タイトル: 事前学習モデルBERTによる飲食店メニュー名における修飾語提案方式</p>
+        <p>BERTのMASK推定機能と作成した事前学習モデルから魅力的な飲食店のメニュー名を自動生成することを目指した</p>
+        <table border="0">
+            <tr>
+                <td><img src="images/IPSJ_BERT_1.png" alt="IPSJ_1" width="400px"></td>
+                <td><img src="images/IPSJ_BERT_2.png" alt="IPSJ_2" width="400px"></td>
+            </tr>
+        </table>
+        <ul>
+            <li>Python: システム全体の実装</li>
+            <li>BERT: 事前学習モデルの作成・MASK推定機能</li>
+        </ul>
+    </ol>
 
     <h3 id="contact">Contact</h3>
     <ul>

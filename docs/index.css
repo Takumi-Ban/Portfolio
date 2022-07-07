@@ -11,7 +11,15 @@ nav {
   li.menu {
     list-style: none;
   }
-  a {
+
+  a.content {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+  }
+
+  a.navbar {
     display: block;
     text-decoration: none;
     color: white;
@@ -23,8 +31,14 @@ nav {
   }
 
   img.set_auto {
-    width: 70%;
+    width: 50%;
     height: auto;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
   }
 
 /* Portrait and Landscape */

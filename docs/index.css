@@ -41,6 +41,26 @@ nav {
     clear: both;
   }
 
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    padding: 30px;
+    width: 50%;
+  }
+
+  .image{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+  }
+  .image img{
+    position:absolute;
+  }
+
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 375px) 
@@ -57,4 +77,14 @@ nav {
       margin:1em; /* 紫領域の外枠の余白を設定 */
       padding:1em;/* 紫領域の内枠の余白を設定 */
     }
+}
+
+@media not all and (min-width: 768px) {
+  .item {
+    width: 100%;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }

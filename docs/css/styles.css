@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+body {
+    background-color: #fefef8;
+}
+
+.nav {
+    background-color: #666;
+}
+
+.nav ul {
+    width: 90%;
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px 10px 0px;
+    display: block;
+    font-size: large;
+}
+
+.nav a:hover {
+    color: #aaa;
+}
+
+.footer {
+    background-color: #666;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 100vh;
+}
+
+ul.menu {
+    display: flex;
+}
+
+li.menu {
+    list-style: none;
+}
+
+ul.inline {
+    list-style: none;
+    display: flex;
+}
+
+ul.content {
+    list-style: none;
+}
+
+.icon {
+    text-align: center;
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+a.content {
+    text-decoration: none;
+    color: inherit;
+}
+
+h4.name {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    position: sticky;
+    top: 100vh;
+}
+
+img.face {
+border-radius: 50%;
+}
+
+/* モバイル対応 */
+@media screen and (max-width: 640px) {
+    .nav {
+        background-color: #0183a0;
+        height: 150px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav li {
+        border-bottom: solid 1px #fff;
+    }
+
+    .footer {
+        background-color: #0183a0;
+    }
+}
